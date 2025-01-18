@@ -1,0 +1,235 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo{
+
+    text-decoration: none;
+    color: #fff;
+  }
+  .logo:hover{
+    color: red;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  
+  .nav-links a {
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  .nav-links a:hover{
+    color: #e74c3c;
+  }
+  .nav-links a.active {
+    color: #e74c3c;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .image-container img {
+    max-width: 60%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .download-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .download-btn:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+  }
+  
+  /* footer {
+    margin-top: 150px;
+    background-color: #333;
+    
+    text-align: center;
+    padding: 15px 0;
+    
+  }
+  
+  footer .social-icons {
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  footer .social-icons a img {
+    
+    width: 30px;
+    height: 30px;
+  }
+   */
+
+   footer {
+    margin-top: 100px;
+    
+    text-align: center;
+    padding: 15px 0;
+    
+  }
+
+   footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+  }
+  
+  footer .social-icons li {
+    margin: 0;
+  }
+  
+  footer .social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Icon color */
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Specific background colors for each icon */
+  footer .social-icons li:nth-child(1) a {
+    background-color: #3b5998; /* Facebook Blue */
+  }
+  
+  footer .social-icons li:nth-child(2) a {
+    background-color: #00acee; /* Twitter Blue */
+  }
+  
+  footer .social-icons li:nth-child(3) a {
+    background-color: #FF0000; /* YouTube Red */
+  }
+  
+  /* Hover effect */
+  footer .social-icons a:hover {
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  footer .social-icons a:active {
+    transform: scale(0.95); /* Press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+      text-align: center;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    footer .social-icons a img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
